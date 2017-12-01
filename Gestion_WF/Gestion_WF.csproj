@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CB75A059-1B36-42AE-818E-B57BA1987DBD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Gestion_WF</RootNamespace>
+    <AssemblyName>Gestion_WF</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="Borland.Data.AdoDbxClient">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Embarcadero\InterBase_ADO.NET\Borland.Data.AdoDbxClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Borland.Data.DbxCommonDriver">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Embarcadero\InterBase_ADO.NET\Borland.Data.DbxCommonDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="Borland.Data.DBXInterBaseDriver">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Embarcadero\InterBase_ADO.NET\Borland.Data.DBXInterBaseDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="Bukimedia.PrestaSharp">
+      <HintPath>..\..\..\..\..\..\..\PrestaSharp-master\bin\Debug\Bukimedia.PrestaSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="ChilkatDotNet46">
+      <HintPath>..\..\..\..\..\..\..\chilkatdotnet46-9.5.0-win32\chilkatdotnet46-9.5.0-win32\ChilkatDotNet46.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v17.1.Core, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v17.1.Core, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="eBay.Service, Version=3.981.0.0, Culture=neutral, PublicKeyToken=1d9d786a5932eaf0, processorArchitecture=MSIL">
+      <HintPath>..\packages\eBay.3.981.0\lib\net40\eBay.Service.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="MWSClientCsRuntime-1.0">
+      <HintPath>..\..\MWSOrders\dist\MWSClientCsRuntime-1.0.dll</HintPath>
+    </Reference>
+    <Reference Include="MWSOrders_2013-09-01_v2017-02-22">
+      <HintPath>..\..\MWSOrders\dist\MWSOrders_2013-09-01_v2017-02-22.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.8.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.6.8.8\lib\net45\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.Entity.EF6, Version=6.8.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.Entity.6.8.8\lib\net45\MySql.Data.Entity.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp, Version=105.2.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.105.2.3\lib\net46\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Amazon\LeerPedidosAmazonUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Amazon\LeerPedidosAmazonUserControl.Designer.cs">
+      <DependentUpon>LeerPedidosAmazonUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Articulos\ArticulosEditar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Articulos\ArticulosEditar.Designer.cs">
+      <DependentUpon>ArticulosEditar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Articulos\ArticulosUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Articulos\ArticulosUserControl.Designer.cs">
+      <DependentUpon>ArticulosUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Articulos\VerEscandalloPopUP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Articulos\VerEscandalloPopUP.Designer.cs">
+      <DependentUpon>VerEscandalloPopUP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Articulos\WaitForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Articulos\WaitForm1.Designer.cs">
+      <DependentUpon>WaitForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ebay\CostosEbayUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ebay\CostosEbayUserControl.Designer.cs">
+      <DependentUpon>CostosEbayUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ebay\EbayUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ebay\EbayUserControl.Designer.cs">
+      <DependentUpon>EbayUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ebay\GetOrdersUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ebay\GetOrdersUserControl.Designer.cs">
+      <DependentUpon>GetOrdersUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ebay\ImportarFacturaEbayUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ebay\ImportarFacturaEbayUserControl.Designer.cs">
+      <DependentUpon>ImportarFacturaEbayUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rajotero\ArbolCategorias.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Rajotero\ArbolCategorias.Designer.cs">
+      <DependentUpon>ArbolCategorias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rajotero\RajoteroArtiulo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Rajotero\RajoteroArtiulo.Designer.cs">
+      <DependentUpon>RajoteroArtiulo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Serializer.cs" />
+    <EmbeddedResource Include="Amazon\LeerPedidosAmazonUserControl.resx">
+      <DependentUpon>LeerPedidosAmazonUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Articulos\ArticulosEditar.resx">
+      <DependentUpon>ArticulosEditar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Articulos\ArticulosUserControl.resx">
+      <DependentUpon>ArticulosUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Articulos\VerEscandalloPopUP.resx">
+      <DependentUpon>VerEscandalloPopUP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Articulos\WaitForm1.resx">
+      <DependentUpon>WaitForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ebay\CostosEbayUserControl.resx">
+      <DependentUpon>CostosEbayUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ebay\EbayUserControl.resx">
+      <DependentUpon>EbayUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ebay\GetOrdersUserControl.resx">
+      <DependentUpon>GetOrdersUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ebay\ImportarFacturaEbayUserControl.resx">
+      <DependentUpon>ImportarFacturaEbayUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Rajotero\ArbolCategorias.resx">
+      <DependentUpon>ArbolCategorias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rajotero\RajoteroArtiulo.resx">
+      <DependentUpon>RajoteroArtiulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\Bukimedia.PrestaSharp.Entities.product.datasource" />
+    <None Include="Properties\DataSources\Gestion_WF.Articulos.EscandalloPintar.datasource" />
+    <None Include="Properties\DataSources\MyEntityModel.AmazonOrder.datasource" />
+    <None Include="Properties\DataSources\MyEntityModel.AmazonOrderLinea.datasource" />
+    <None Include="Properties\DataSources\MyEntityModel.Articulo.datasource" />
+    <None Include="Properties\DataSources\MyEntityModel.EbayOrder.datasource" />
+    <None Include="Properties\DataSources\MyEntityModel.EbayOrderLinea.datasource" />
+    <None Include="Properties\DataSources\MyEntityModel.EBAY_SEGUIMIENTO.datasource" />
+    <None Include="Properties\DataSources\MyEntityModel.Linea.datasource" />
+    <None Include="Properties\DataSources\MyEntityModel.L_ENVIOS.datasource" />
+    <None Include="Properties\DataSources\MyEntityModel.L_PEDIDOS.datasource" />
+    <None Include="Properties\DataSources\MyEntityModel.ps_category.datasource" />
+    <None Include="Properties\DataSources\MyEntityModel.ps_category_lang.datasource" />
+    <None Include="Properties\DataSources\MyEntityModel.ps_category_product.datasource" />
+    <None Include="Properties\DataSources\MyEntityModel.ps_lang.datasource" />
+    <None Include="Properties\DataSources\MyEntityModel.ps_product.datasource" />
+    <None Include="Properties\DataSources\MyEntityModel.ps_product_lang.datasource" />
+    <None Include="Properties\DataSources\MyEntityModel.ps_product_shop.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyEntityModel\MyEntityModel.csproj">
+      <Project>{c9b5db12-d020-4581-b92e-cc0dd0b4af20}</Project>
+      <Name>MyEntityModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
